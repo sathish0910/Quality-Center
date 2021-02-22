@@ -1,0 +1,54 @@
+/* inject Script */
+#btServedBy {
+    display: none !important;
+}
+/* inject Script */
+
+#myTabContent {
+    padding-top: 10px;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+    background-color: rgba( 205,230,247,0.5 );
+}
+
+a.nav-link {
+    border-top-left-radius: 15px !important;
+    border-top-right-radius: 15px !important;
+    padding-top: 14px !important;
+}
+
+.approveBtn {
+    background-color: #008b8b !important;
+    border-radius: 10px;
+    color: black !important;
+}
+
+.rejectBtn, #rejCmtsBtn {
+    background-color: #ed143d !important;
+    border-radius: 10px;
+    color: black !important;
+}
+
+#rejectComments {
+    background-color: black;
+    color: white;
+    width: 70%;
+    height: 50px;
+}
+
+.ui-widget.ui-widget-content {
+    width: 500px !important;
+    top: 230px !important;
+    left: 30% !important;
+}
+
+.modal {
+    top: 25% !important;
+}
+
+.modal-backdrop {
+    display:none;
+}

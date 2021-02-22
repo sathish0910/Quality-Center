@@ -1,0 +1,515 @@
+<html>
+
+<head>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<link rel="stylesheet" href="https://office4.bt.com/sites/QCPortal/Resources/QCPortal/CSS/updateReq.css">
+	<script src="https://office4.bt.com/sites/QCPortal/Resources/QCPortal/JS/updateReq.js"></script>
+</head>
+
+<body>
+	<ul class="nav nav-tabs" id="myTab" role="tablist">
+		<li class="nav-item">
+			<a class="nav-link active" id="pending-tab" data-toggle="tab" href="#pending" role="tab"
+				aria-controls="pending" aria-selected="true">Pending Request</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" id="rejected-tab" data-toggle="tab" href="#rejected" role="tab" aria-controls="rejected"
+				aria-selected="false">Reject Request</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" id="approved-tab" data-toggle="tab" href="#approved" role="tab" aria-controls="approved"
+				aria-selected="false">Approved Request</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" id="completed-tab" data-toggle="tab" href="#completed" role="tab"
+				aria-controls="completed" aria-selected="false">Bot Completed Request</a>
+		</li>
+	</ul>
+	<div class="tab-content" id="myTabContent">
+		<div class="tab-pane fade show in active" id="pending" role="tabpanel" aria-labelledby="pending-tab">
+			<ul class="nav nav-tabs" id="myTab" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link active" id="pending-btuser-tab" data-toggle="tab" href="#pending-btuser"
+						role="tab" aria-controls="pendingBTUser" aria-selected="true">New BT User</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="pending-additional-tab" data-toggle="tab" href="#pending-additional"
+						role="tab" aria-controls="pendingAdditional" aria-selected="false">Additional QC Access</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="pending-reactivation-tab" data-toggle="tab" href="#pending-reactivation"
+						role="tab" aria-controls="pendingReactivation" aria-selected="false">Account Re-activation</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="pending-unlock-account-tab" data-toggle="tab" href="#pending-unlock-account"
+						role="tab" aria-controls="pendingUnlockAccount" aria-selected="false">Unlocking Your QC account</a>
+				</li>
+			</ul>
+			<div class="tab-content" id="pendingContent">
+				<div class="tab-pane fade show in active" id="pending-btuser" role="tabpanel"
+					aria-labelledby="pending-btuser-tab">
+					<table class="table table-hover">
+						<thead style="border: 1px solid black; background-color: #303030; color: #fff">
+							<tr>
+								<th colspan="8">Quality Center Pending Request</th>
+							</tr>
+						</thead>
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>Name of Requestor</th>
+								<th>Request Raised on</th>
+								<th>Default Access</th>
+								<th>Access Request</th>
+								<th>Project Role</th>
+								<th>SME Status</th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+
+						</tbody>
+					</table>
+				</div>
+				<div class="tab-pane fade" id="pending-additional" role="tabpanel"
+					aria-labelledby="pending-additional-tab">
+					<table class="table table-hover">
+						<thead style="border: 1px solid black; background-color: #303030; color: #fff">
+							<tr>
+								<th colspan="8">Quality Center Pending Request</th>
+							</tr>
+						</thead>
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>Name of Requestor</th>
+								<th>Request Raised on</th>
+								<th>Default Access</th>
+								<th>Access Request</th>
+								<th>Project Role</th>
+								<th>SME Status</th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+
+						</tbody>
+					</table>
+				</div>
+				<div class="tab-pane fade" id="pending-reactivation" role="tabpanel"
+					aria-labelledby="pending-reactivation-tab">
+					<table class="table table-hover">
+						<thead style="border: 1px solid black; background-color: #303030; color: #fff">
+							<tr>
+								<th colspan="4">Quality Center Pending Request</th>
+							</tr>
+						</thead>
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>Name of Requestor</th>
+								<th>Request Raised on</th>
+								<th>SME Status</th>
+							</tr>
+						</thead>
+						<tbody>
+
+						</tbody>
+					</table>
+				</div>
+				<div class="tab-pane fade" id="pending-unlock-account" role="tabpanel"
+					aria-labelledby="pending-unlock-account-tab">
+					<table class="table table-hover">
+						<thead style="border: 1px solid black; background-color: #303030; color: #fff">
+							<tr>
+								<th colspan="4">Quality Center Pending Request</th>
+							</tr>
+						</thead>
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>Name of Requestor</th>
+								<th>Request Raised on</th>
+								<th>SME Status</th>
+							</tr>
+						</thead>
+						<tbody>
+
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="tab-pane fade" id="rejected" role="tabpanel" aria-labelledby="rejected-tab">
+			<ul class="nav nav-tabs" id="myTab" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link active" id="rejected-btuser-tab" data-toggle="tab" href="#rejected-btuser"
+						role="tab" aria-controls="rejectedBTUser" aria-selected="true">New BT User</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="rejected-additional-tab" data-toggle="tab" href="#rejected-additional"
+						role="tab" aria-controls="rejectedAdditional" aria-selected="false">Additional QC Access</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="rejected-reactivation-tab" data-toggle="tab" href="#rejected-reactivation"
+						role="tab" aria-controls="rejectedReactivation" aria-selected="false">Account Re-activation</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="rejected-unlock-account-tab" data-toggle="tab"
+						href="#rejected-unlock-account" role="tab" aria-controls="rejectedUnlockAccount"
+						aria-selected="false">Unlocking Your QC account</a>
+				</li>
+			</ul>
+			<div class="tab-content" id="rejectedContent">
+				<div class="tab-pane fade show in active" id="rejected-btuser" role="tabpanel"
+					aria-labelledby="rejected-btuser-tab">
+					<table class="table table-hover">
+						<thead style="border: 1px solid black; background-color: #303030; color: #fff">
+							<tr>
+								<th colspan="8">Quality Center Rejected Request</th>
+							</tr>
+						</thead>
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>Name of Requestor</th>
+								<th>Request Raised on</th>
+								<th>Default Access</th>
+								<th>Access Request</th>
+								<th>Project Role</th>
+								<th>SME Status</th>
+								<th>Comments</th>
+							</tr>
+						</thead>
+						<tbody>
+
+						</tbody>
+					</table>
+				</div>
+				<div class="tab-pane fade" id="rejected-additional" role="tabpanel"
+					aria-labelledby="rejected-additional-tab">
+					<table class="table table-hover">
+						<thead style="border: 1px solid black; background-color: #303030; color: #fff">
+							<tr>
+								<th colspan="8">Quality Center Rejected Request</th>
+							</tr>
+						</thead>
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>Name of Requestor</th>
+								<th>Request Raised on</th>
+								<th>Default Access</th>
+								<th>Access Request</th>
+								<th>Project Role</th>
+								<th>SME Status</th>
+								<th>Comments</th>
+							</tr>
+						</thead>
+						<tbody>
+
+						</tbody>
+					</table>
+				</div>
+				<div class="tab-pane fade" id="rejected-reactivation" role="tabpanel"
+					aria-labelledby="rejected-reactivation-tab">
+					<table class="table table-hover">
+						<thead style="border: 1px solid black; background-color: #303030; color: #fff">
+							<tr>
+								<th colspan="5">Quality Center Rejected Request</th>
+							</tr>
+						</thead>
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>Name of Requestor</th>
+								<th>Request Raised on</th>
+								<th>SME Status</th>
+								<th>Comments</th>
+							</tr>
+						</thead>
+						<tbody>
+
+						</tbody>
+					</table>
+				</div>
+				<div class="tab-pane fade" id="rejected-unlock-account" role="tabpanel"
+					aria-labelledby="rejected-unlock-account-tab">
+					<table class="table table-hover">
+						<thead style="border: 1px solid black; background-color: #303030; color: #fff">
+							<tr>
+								<th colspan="5">Quality Center Rejected Request</th>
+							</tr>
+						</thead>
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>Name of Requestor</th>
+								<th>Request Raised on</th>
+								<th>SME Status</th>
+								<th>Comments</th>
+							</tr>
+						</thead>
+						<tbody>
+
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="tab-pane fade" id="approved" role="tabpanel" aria-labelledby="approved-tab">
+			<ul class="nav nav-tabs" id="myTab" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link active" id="approved-btuser-tab" data-toggle="tab" href="#approved-btuser"
+						role="tab" aria-controls="approvedBTUser" aria-selected="true">New BT User</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="approved-additional-tab" data-toggle="tab" href="#approved-additional"
+						role="tab" aria-controls="approvedAdditional" aria-selected="false">Additional QC Access</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="approved-reactivation-tab" data-toggle="tab" href="#approved-reactivation"
+						role="tab" aria-controls="approvedReactivation" aria-selected="false">Account Re-activation</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="approved-unlock-account-tab" data-toggle="tab"
+						href="#approved-unlock-account" role="tab" aria-controls="approvedUnlockAccount"
+						aria-selected="false">Unlocking Your QC account</a>
+				</li>
+			</ul>
+			<div class="tab-content" id="approvedContent">
+				<div class="tab-pane fade show in active" id="approved-btuser" role="tabpanel"
+					aria-labelledby="approved-btuser-tab">
+					<table class="table table-hover">
+						<thead style="border: 1px solid black; background-color: #303030; color: #fff">
+							<tr>
+								<th colspan="7">Quality Center Approved Request</th>
+							</tr>
+						</thead>
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>Name of Requestor</th>
+								<th>Request Raised on</th>
+								<th>Default Access</th>
+								<th>Access Request</th>
+								<th>Project Role</th>
+								<th>SME Status</th>
+							</tr>
+						</thead>
+						<tbody>
+
+						</tbody>
+					</table>
+				</div>
+				<div class="tab-pane fade" id="approved-additional" role="tabpanel"
+					aria-labelledby="approved-additional-tab">
+					<table class="table table-hover">
+						<thead style="border: 1px solid black; background-color: #303030; color: #fff">
+							<tr>
+								<th colspan="7">Quality Center Approved Request</th>
+							</tr>
+						</thead>
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>Name of Requestor</th>
+								<th>Request Raised on</th>
+								<th>Default Access</th>
+								<th>Access Request</th>
+								<th>Project Role</th>
+								<th>SME Status</th>
+							</tr>
+						</thead>
+						<tbody>
+
+						</tbody>
+					</table>
+				</div>
+				<div class="tab-pane fade" id="approved-reactivation" role="tabpanel"
+					aria-labelledby="approved-reactivation-tab">
+					<table class="table table-hover">
+						<thead style="border: 1px solid black; background-color: #303030; color: #fff">
+							<tr>
+								<th colspan="4">Quality Center Approved Request</th>
+							</tr>
+						</thead>
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>Name of Requestor</th>
+								<th>Request Raised on</th>
+								<th>SME Status</th>
+							</tr>
+						</thead>
+						<tbody>
+
+						</tbody>
+					</table>
+				</div>
+				<div class="tab-pane fade" id="approved-unlock-account" role="tabpanel"
+					aria-labelledby="approved-unlock-account-tab">
+					<table class="table table-hover">
+						<thead style="border: 1px solid black; background-color: #303030; color: #fff">
+							<tr>
+								<th colspan="4">Quality Center Approved Request</th>
+							</tr>
+						</thead>
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>Name of Requestor</th>
+								<th>Request Raised on</th>
+								<th>SME Status</th>
+							</tr>
+						</thead>
+						<tbody>
+
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="tab-pane fade" id="completed" role="tabpanel" aria-labelledby="completed-tab">
+			<ul class="nav nav-tabs" id="myTab" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link active" id="completed-btuser-tab" data-toggle="tab" href="#completed-btuser"
+						role="tab" aria-controls="completedBTUser" aria-selected="true">New BT User</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="completed-additional-tab" data-toggle="tab" href="#completed-additional"
+						role="tab" aria-controls="completedAdditional" aria-selected="false">Additional QC Access</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="completed-reactivation-tab" data-toggle="tab" href="#completed-reactivation"
+						role="tab" aria-controls="completedReactivation" aria-selected="false">Account Re-activation</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="completed-unlock-account-tab" data-toggle="tab"
+						href="#completed-unlock-account" role="tab" aria-controls="completedUnlockAccount"
+						aria-selected="false">Unlocking Your QC account</a>
+				</li>
+			</ul>
+			<div class="tab-content" id="completedContent">
+				<div class="tab-pane fade show in active" id="completed-btuser" role="tabpanel"
+					aria-labelledby="completed-btuser-tab">
+					<table class="table table-hover">
+						<thead style="border: 1px solid black; background-color: #303030; color: #fff">
+							<tr>
+								<th colspan="8">Quality Center Completed Request By Bot</th>
+							</tr>
+						</thead>
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>Name of Requestor</th>
+								<th>Request Raised on</th>
+								<th>Default Access</th>
+								<th>Access Request</th>
+								<th>Project Role</th>
+								<th>SME Status</th>
+								<th>Bot Status</th>
+							</tr>
+						</thead>
+						<tbody>
+
+						</tbody>
+					</table>
+				</div>
+				<div class="tab-pane fade" id="completed-additional" role="tabpanel"
+					aria-labelledby="completed-additional-tab">
+					<table class="table table-hover">
+						<thead style="border: 1px solid black; background-color: #303030; color: #fff">
+							<tr>
+								<th colspan="8">Quality Center Completed Request By Bot</th>
+							</tr>
+						</thead>
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>Name of Requestor</th>
+								<th>Request Raised on</th>
+								<th>Default Access</th>
+								<th>Access Request</th>
+								<th>Project Role</th>
+								<th>SME Status</th>
+								<th>Bot Status</th>
+							</tr>
+						</thead>
+						<tbody>
+
+						</tbody>
+					</table>
+				</div>
+				<div class="tab-pane fade" id="completed-reactivation" role="tabpanel"
+					aria-labelledby="completed-reactivation-tab">
+					<table class="table table-hover">
+						<thead style="border: 1px solid black; background-color: #303030; color: #fff">
+							<tr>
+								<th colspan="5">Quality Center Completed Request By Bot</th>
+							</tr>
+						</thead>
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>Name of Requestor</th>
+								<th>Request Raised on</th>
+								<th>SME Status</th>
+								<th>Bot Status</th>
+							</tr>
+						</thead>
+						<tbody>
+
+						</tbody>
+					</table>
+				</div>
+				<div class="tab-pane fade" id="completed-unlock-account" role="tabpanel"
+					aria-labelledby="completed-unlock-account-tab">
+					<table class="table table-hover">
+						<thead style="border: 1px solid black; background-color: #303030; color: #fff">
+							<tr>
+								<th colspan="5">Quality Center Completed Request By Bot</th>
+							</tr>
+						</thead>
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>Name of Requestor</th>
+								<th>Request Raised on</th>
+								<th>SME Status</th>
+								<th>Bot Status</th>
+							</tr>
+						</thead>
+						<tbody>
+
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="commentsModal" data-keyboard="false" data-backdrop="static" tabindex="-1" role="dialog"
+		aria-labelledby="commentsModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="commentsModalLabel">Rejected Comments</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<span style="font-weight: bold; font-size: 16px;">Comments: </span>
+					<input type='text' id='rejectComments' style="background-color: black; color: white;" />
+				</div>
+				<div class="modal-footer">
+					<input type="button" value="Reject" id="rejCmtsBtn" />
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
